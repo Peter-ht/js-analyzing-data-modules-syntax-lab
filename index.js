@@ -1,16 +1,18 @@
-require ("date.js")
+require("date.js");
 
-function combinedUsers(...args){
-  const combinedObject = users([]);
-};
+function combineUsers(...args) {
+    const combinedObject = {users: []
+    };
 
-for(const userArray of args){
-  combinedObject.user=[...combinedObject.user , ...userArray];
-};
-combinedObject.merge_date = Date.today().toString(`10/18/2026`);
+    for (const userArray of args) {
+        combinedObject.users = [...combinedObject.users, ...userArray];
+    }
 
+    combinedObject.merge_date = Date.today().toString("10/18/2026");
 
+    return combinedObject;
+}
 
 module.exports = {
-  ...(typeof combineUsers !== 'undefined' && { combineUsers })
+    ...(typeof combineUsers !== "undefined" && { combineUsers })
 };
