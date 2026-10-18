@@ -1,7 +1,7 @@
 require ("date.js")
 
 function combinedUsers(...args){
-  const combinedObject = user([]);
+  const combinedObject = users([]);
 };
 
 for(const userArray of args){
