@@ -1,7 +1,6 @@
 require ("date.js")
 
 function combinedUsers(...args){
-  debugger
   const combinedObject = user([]);
 };
 
