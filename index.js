@@ -1,14 +1,18 @@
 require("date.js");
 
 function combineUsers(...args) {
-    const combinedObject = {users: []
+    const combinedObject = {
+        users: []
     };
 
     for (const userArray of args) {
-        combinedObject.users = [...combinedObject.users, ...userArray];
+        combinedObject.users = [
+            ...combinedObject.users,
+            ...userArray
+        ];
     }
 
-    combinedObject.merge_date = Date.today().toString("10/18/2026");
+    combinedObject.merge_date = Date.today().toString("MM/dd/yyyy");
 
     return combinedObject;
 }
