@@ -15,6 +15,7 @@ args.forEach((userArray) => {
 combinedObject.merge_date = Date.today().toString("M/d/yyyy");
 
 return combinedObject;
+
 }
 
 module.exports = {
